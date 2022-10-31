@@ -1,0 +1,24 @@
+<div class="fondo">
+<div class="container">
+    <div class="row">
+        <!--<div>-->
+            <h2>Nueva Skill Desbloqueada</h2>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group skill">
+                    <label for="nombre">Skill</label>
+                    <input type="text" class="form-control" id="nombre" 
+                    name="nombreE" [(ngModel)]="nombre" required="">
+                </div>
+                <div class="form-group porcent">
+                    <label for="porcentaje">Porcenjate</label>
+                    <input type="range" min="0" max="100" (input)="mnum()" class="form-control" id="porcentaje" 
+                    name="porcentaje" [(ngModel)]="porcentaje" required="">
+                    <span id="num">{{porcentaje}}</span>
+                </div>
+                
+                <button class="btn btn-primary">Agregar Skill</button>
+            </form>
+        <!--</div>-->
+    </div>
+</div>
+</div>

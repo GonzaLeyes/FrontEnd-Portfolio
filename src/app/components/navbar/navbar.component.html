@@ -1,0 +1,20 @@
+<header>
+    <!--Arriba a la derecha las redes con sus logos y links-->
+    <!--Nav solo debe de llevar enlaces de navegacion-->
+    <nav class="navbar">
+        <!--Tiene que decir Argentina programa arriba a la derecha y estaria bueno poner el logo-->
+        <div>
+            <p><img src="../../../assets/Logo.png" class="logo" alt="logo de la pagina">Portfolio Personal</p>
+        </div>
+        <div class="redes">
+            <ul>
+                <!--<li><a class="navbar__enlace" href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>-->
+                <li><a class="navbar__enlace" href="https://www.instagram.com/gonzalo_leyes/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="navbar__enlace" href="https://github.com/GonzaLeyes" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a class="navbar__enlace" href="https://www.linkedin.com/in/gonzalo-leyes-263b3a17a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><button class="btn btn-dark" (click)="login()" *ngIf="!isLogged">Login</button></li>
+                <li><button class="btn btn-dark" (click)="onLogOut()" *ngIf="isLogged">LogOut</button></li>
+            </ul>
+        </div>
+    </nav>
+</header>

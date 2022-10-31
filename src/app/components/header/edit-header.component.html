@@ -1,0 +1,40 @@
+<div class="fondo">
+    <div class="container" *ngIf="persona">
+        <div class="row">
+            <h2>Editar datos Personales</h2>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group nombre">
+                    <label for="nombre">Nombre/s</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo"
+                        [(ngModel)]="persona.nombre" required="">
+                </div>
+                <div class="form-group apellido">
+                    <label for="apellido">Apellido/s</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido/s"
+                        [(ngModel)]="persona.apellido" required="">
+                </div>
+                <div class="form-group titulo">
+                    <label for="titulo">Título</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Titulo"
+                        [(ngModel)]="persona.titulo" required="">
+                </div>
+                <div class="form-group descripcion">
+                    <label for="descripcion">Descripción</label>
+                    <textarea  class="form-control" id="descripcion" name="descripcion"
+                        placeholder="Acerca de mi" maxlength="300" rows="4" [(ngModel)]="persona.descripcion" required=""></textarea>
+                </div>
+                <div class="form-group imagen">
+                    <label for="img">Foto de perfil</label>
+                    <input type="file" class="form-control" id="img" name="img" [(ngModel)]="persona.img"
+                        (change)="uploadImage($event)" accept=".jpg,.jpeg,.png">
+                </div>
+                <div class="clearfix"></div>
+                <div class="imagen">
+                    <img [src]="imgService.url" alt="Imagen a cargar">
+                </div>
+                <div class="clearfix"></div>
+                <button class="btn btn-primary btn-lg btn-responsive">Actualizar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+.fondo{
+    border-color: #6cad80;
+    border-style: dashed;
+    background-color: #6cad80;
+    min-height:100vh;
+    min-width:100%;
+    
+}
+.container{
+    max-width: 60%;
+    margin-top: 4%;
+}
+
+.row{
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 40px 20px 30px;
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+}
+
+h2, label{
+    font-family: 'Secular One', sans-serif;
+    font-weight: bolder;
+}
+h2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+
+.skill{
+    margin-bottom: 20px;
+    margin-left:20px;
+	width: 50%;
+    float:left;
+    text-align: left;
+}
+
+.porcent{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left:20px;
+	width: 30%;
+    float:left;
+    text-align: left;
+}
+
+span{
+    padding: 10px 10px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: lighter;
+    color: grey;
+
+}
+
+.form-control{
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: lighter;
+    color: grey;
+    border-color: #6cad80;
+    border-width: 2px;
+}
+#porcentaje{
+    padding: 14px;
+}
+
+.btn{
+    width: 46%;
+    margin: 20px auto 0;
+    display: block;
+}

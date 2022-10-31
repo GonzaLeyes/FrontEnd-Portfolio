@@ -1,0 +1,20 @@
+<div class="sector">
+    <!--Banner con una foto en grande-->
+    <div class="banner">
+        <img src="../../../assets/banner2.jpg" id="ban" alt="Banner" title="Banner" >
+    </div>
+    <div class="sector__caja">
+        <img id="perfil" src="{{persona.img}}" alt="Foto de perfil" >
+        <a href="#" class="btn_edit" routerLink="/editheader/1" *ngIf="isLogged"><i class="fa-solid fa-square-pen"></i></a>
+        <div class="sector__caja--nombre">
+            <div class="editores">
+                <h2 id="nombre-completo"><b>{{persona.apellido}} {{persona.nombre}}</b></h2>
+                <!--<a href="#" class="btn_edit"><i class="fa-solid fa-square-pen"></i></a>-->
+            </div>
+                <h3 id="titulo">{{persona.titulo}}</h3>
+                <p id="descripcion">{{persona.descripcion}}</p> 
+                <!--<p id="localidad">San Miguel, Buenos Aires, Argentina </p> <a href="https://www.linkedin.com/in/gonzalo-leyes-263b3a17a/" target="_blank">
+                    - Información de contacto</a>-->
+        </div>
+    </div>
+</div>

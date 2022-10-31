@@ -1,0 +1,22 @@
+<div class="sector">
+    <div class="sector__caja">
+        <div class="editores">
+            <h2 class="sector__title">Proyectos</h2>
+            <a href="#" class="btn_edit" routerLink="/nuevoproyecto" *ngIf="isLogged"><i class="fa-solid fa-plus"></i></a>
+        </div>
+
+
+        <div class="sector__caja--item" *ngFor="let proyecto of proyectos">
+            <div class="editores">
+                <h4>{{proyecto.nombreP}}</h4>
+                <div class="editores__icon">
+                    <a href="#" class="btn_edit" routerLink="/editproyecto/{{proyecto.id}}" *ngIf="isLogged"><i class="fa-solid fa-square-pen"></i></a>
+                    <a href="#" class="btn_edit" (click)="delete(proyecto.id)" *ngIf="isLogged"><i class="fa-solid fa-trash" style="font-size: 22px;"></i></a>
+                </div>
+            </div>
+            <p class="sector__caja--item-sub">{{proyecto.descripcionP}}</p>
+            <a class="btn btn-success" href={{proyecto.enlaceP}} target="_blank">
+                Enlace <i class="fa-solid fa-fire"></i></a>
+        </div>
+    </div>
+</div>
